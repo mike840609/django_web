@@ -1,7 +1,10 @@
 h1 a {
     /*color: #FCA205;*/
     color: rgb(219, 10, 91);
-    font-family: 'Lobster';
+    /*font-family: 'Lobster';*/
+    /*font-family: 'Indie Flower', cursive;*/
+    /*font-family: 'Gloria Hallelujah', cursive;*/
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 
@@ -25,7 +28,10 @@ h1 a {
 }*/
 
 h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+    /*font-family: 'Lobster', cursive;*/
+    /*font-family: 'Indie Flower', cursive;*/
+    /*font-family: 'Gloria Hallelujah', cursive;*/
+    font-family: 'Gloria Hallelujah', cursive;
 }
 
 .date {
