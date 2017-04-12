@@ -6,7 +6,6 @@ from django.utils import timezone
 
 
 
-
 def post_list(request):
      # In the render function we have one parameter request
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')

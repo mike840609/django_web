@@ -13,17 +13,28 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
+
+
 """
-    ^post/      is telling Django to take anything that has post/ at the beginning of the url (right after ^)
-    (\d+)       means that there will be a number (one or more digits) and that we want the number captured and extracted
-    /           tells django that another / character should follow
-    $           then indicates the end of the URL meaning that only strings ending with the / will match this pattern
+^ 表示文本的开始
+$ 表示文本的结束
+\d 表示数字
++ 表示前面的元素应该重复至少一次
+() 用来捕捉模式中的一部分
+
 """
+
 #  記得 import include
 from django.conf.urls import include,url
 from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+
+    #  redrict the empty url to blog.urls
+    # 写正则表达式时，记得把一个 r 放在字符串的前面。 
+    # 这告诉 Python，这个字符串中的特殊字符是为正则表达式准备的，而不是为 Python 自身准备的。
+    
     url(r'', include('blog.urls')),
+
 ]

@@ -10,6 +10,8 @@
     
     <!--<h1><a href="">{{ post.title }}</a></h1> -->
 
+    <!-- post_detail is the funtion which in the views.py-->
+    <!-- Django creates default pk for us  ,  and adds it as a field named pk to each of our posts -->
     <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
