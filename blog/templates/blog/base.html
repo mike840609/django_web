@@ -2,14 +2,16 @@
 
 <head>
 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
     <!-- 最新編譯和最佳化的 CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <!-- 選擇性佈景主題 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
     <!-- 最新編譯和最佳化的 JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
-
 
 
     <!--fonts-->
@@ -18,14 +20,9 @@
     <!--<link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>-->
     <link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
 
-
-
-
     <!--load customer css-->
     <!--{% load staticfiles %}
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">-->
-
-
     <title>Django blog</title>
 </head>
 
@@ -68,12 +65,18 @@
     <!--========================================================================================-->
     <div class=" container-fluid">
         <div class="row row-offcanvas row-offcanvas-right">
-            <div class="col-xs-0 col-lg-2"></div>
-            <div class="col-xs-12 col-lg-8">
-                {% block content %} {% endblock %}
+            <div class="row">
+                <div class="col-xs-0 col-lg-2"></div>
+                <div class="col-xs-12 col-lg-8">
+                    {% block content %} {% endblock %}
+                </div>
             </div>
         </div>
     </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 </body>
 
 </html>
